@@ -1,0 +1,24 @@
+Java
+
+import java.util.Scanner;
+
+public class SumOfNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите число N: ");
+        int n = scanner.nextInt();
+
+        // Переменная для хранения суммы
+        int sum = 0;
+
+        // Цикл для суммирования чисел от 1 до N
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+        }
+
+        System.out.println("Сумма чисел от 1 до " + n + ": " + sum);
+
+        scanner.close(); // Закрываем сканнер
+    }
+}
